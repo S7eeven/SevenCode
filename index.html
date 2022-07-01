@@ -13,6 +13,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <!--ANIMACIONES-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-173908298-1"></script>
     <script>
@@ -65,7 +70,7 @@
     <!-- Secion sobre mi -->
     <section class="about" id="about">
         <div class="max-width">
-            <h2 class="title">Sobre mí</h2>
+            <h2 class="title " id="sobremi">Sobre mí</h2>
             <div class="about-content">
                 <div class="column left">
                     <img src="images/steven.jpg" alt="">
@@ -82,6 +87,7 @@
     <section class="services" id="services">
         <div class="max-width">
             <h2 class="title">Servicios</h2>
+            <p class="text-center">Sé Que <b class="tex-color">Buenas Aplicaciones</b> Significa <b class="tex-color">Buen Negocio</b></p>
             <div class="serv-content">
                 <div class="card">
                     <div class="box">
@@ -114,23 +120,52 @@
             <h2 class="title">Mis Habilidades </h2>
             <div class="skills-content">
                 <div class="column left">
-                    <div class="text">Mis habilidades y experiencias. 💻 💪 😎</div>
-                    <p>Encontre mi pasión por el desarrollo frontend hace 3 años cuando comencé a desarrollar proyecto personales. Siempre trato de aprender algo nuevo todos los días para mantenerme encaminado y cumplir con la meta que me propongo cada año. Actualmente me estoy capacitando en el <b>MERN</b> Stack. </p>
+                    <div class="text">Estas son algunas de mis habilidades... 💻 💪 😎</div>
+                    <p>Encontre mi pasión por el desarrollo frontend hace 3 años cuando comencé a desarrollar proyecto personales. Siempre trato de aprender algo nuevo todos los días para mantenerme encaminado y cumplir con la meta que me propongo cada año. Actualmente me estoy capacitando en el Stack <b>MERN</b>. </p>
                 </div>
-                <div class="column right">
-                    <img class="habilidades" src="images/html5.png" alt="">
-                    <img class="habilidades" src="images/css3.png" alt="">
-                    <img class="habilidades" src="images/javascript.png" alt="">
-                    <img class="habilidades" src="images/bootstrap.png" alt="">
-                    <img class="habilidades" src="images/jquery.png" alt="">
-                    <img class="habilidades" src="images/typescript.png" alt="">
-                    <img class="habilidades" src="images/react.png" alt="">
-                    <img class="habilidades" src="images/mysql.png" alt="">
-                    <img class="habilidades" src="images/mongodb.png" alt="">
-                    <img class="habilidades" src="images/git.png" alt="">
-                    <img class="habilidades"  src="images/github.png" alt="">
-                    <img class="habilidades"  src="images/figma.png" alt="">
-                    <img class="habilidades"  src="images/sass.png" alt="">
+                <div class="column right skill-container_padre">
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/html.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/css.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/sass.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/bootstrap.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/tailwind.ico" alt=""> 
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/javascript.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/typescript.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/react.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/node.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/mongodb.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades" src="images/mysql.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades"  src="images/npm.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades"  src="images/git.ico" alt="">
+                    </div>
+                    <div class="cuadro-container">
+                        <img class="habilidades"  src="images/figma.ico" alt="">
+                    </div>          
                 </div>
             </div>
         </div>
@@ -200,29 +235,40 @@
                         <a class="btn-ver-proyecto" href="https://s7eeven.github.io/LoAltoChef/" target="_black" >Ver Proyecto</a>
                     </div>
                 </div>
+                <div class="card">
+                    <div class="box">
+                        <img src="images/carrito.PNG" alt="">
+                        <div class="text">Shop Reacty Sass</div>
+                        <a class="btn-ver-proyecto" href="https://s7eeven.github.io/CarritoShop-React/" target="_black" >Ver Proyecto</a>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="boton-centrado" > 
+            <button class="cta">
+                <span><a href="https://github.com/S7eeven" target="_black" >Mas en Github</a></span>
+                <svg viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+            </button>
         </div>
     </section>
     <!-- Secion de Contacto -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title">Contacto</h2>
+            <h2 class="title">Contáctame</h2>
             <div class="contact-content">
                 <div class="column left">
-                    <p>Para contactar conmigo sobre un nuevo proyecto, solicita un presupuesto o simplemente saluda, enviándome un Gmail contactaré contigo en una 24 horas.</p>
+                    <p class="texto-bold">Gracias por llegar hasta aquí, si crees que puedo aportar valor a tu equipo no dudes en escribirme.</p>
+                    <p class="texto-info">Puedes contactarme de la siguiente manera... <a href="https://www.linkedin.com/in/steeven-orbe-79653a14a" target="_black" > <b> Click 🥷!</b></a> </p>
                     <div class="icons">
-                        <div class="row">
-                            <img src="images/persona.png" alt="">
-                            <div class="info">
-                                <div class="head">Nombre</div>
-                                <div class="sub-title">Steeven Orbe</div>
-                            </div>
-                        </div>
+                        
                         <div class="row">
                             <img src="images/hubicacion.png" alt="">
                             <div class="info">
                                 <div class="head">Direccion</div>
-                                <div class="sub-title">Santo Domingo de los Tsachilas, 🇪🇨 ECUADOR</div>
+                                <div class="sub-title">Quito, 🇪🇨 ECUADOR</div>
                             </div>
                         </div>
                         <div class="row">
@@ -240,7 +286,7 @@
     </section>
     <!-- Secion de footer -->
     <footer>
-        <span>Frontend <a href="https://www.linkedin.com/in/steeven-orbe-79653a14a">Developer</a> | <span class="fa fa-copyright"></span> 2021 Steeven Orbe.</span>
+        <span>Frontend <a href="https://www.linkedin.com/in/steeven-orbe-79653a14a">Developer</a> | <span class="fa fa-copyright"></span> 2022 Steeven Orbe.</span>
         <p>"Programar es Lo más cercano a tener superpoderes".</p>
     </footer>
     <script src="./js/script.js"></script>

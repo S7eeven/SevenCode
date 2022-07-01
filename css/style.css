@@ -50,7 +50,7 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
     padding-bottom: 10px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -224,7 +224,7 @@ section .title::after{
 .bienvenido{
     width: 70%;
     margin: auto;
-    margin-bottom: -110px;
+    margin-bottom: -150px;
 }
 
 .bienvenido .intro{
@@ -402,7 +402,7 @@ section .title::after{
     content: "";
 }
 .skills .skills-content .column{
-    width: calc(50% - 30px);
+    width: calc(50% - 10px);
 }
 .skills .skills-content .left .text{
     font-size: 20px;
@@ -456,6 +456,18 @@ section .title::after{
     background: crimson;
 }
 
+.cuadro-container{
+    border-radius: 7px;
+    background: linear-gradient(315deg, #cacaca, #f0f0f0);
+    box-shadow:  -10px -10px 20px #d0d0d0,
+                 10px 10px 20px #f0f0f0;
+                 margin: 10px;
+                 
+}
+.skill-container_padre{
+    display: flex;
+    flex-wrap: wrap;
+}
 .column .habilidades{
     text-align: center;
     margin-top: 10px;
@@ -509,14 +521,16 @@ section .title::after{
 }
 .teams .carousel .card img{
     height: 180px;
-    width: 260px;
+    width: 300px;
     object-fit: cover;
-    border-radius: 5%;
-    border: 5px solid crimson;
+    border-radius: 3%;
+    border: 4px solid crimson;
     transition: all 0.3s ease;
 }
 .teams .carousel .card:hover img{
     border-color: #fff;
+    height: 210px;
+    width: 340px;
 }
 .owl-dots{
     text-align: center;
@@ -736,6 +750,91 @@ footer span a:hover{
         width: 100%;
         margin-bottom: 35px;
     }
+}
+
+/*boton mas en gitHub*/
+.boton-centrado{
+    text-align: center;
+    padding-top: 30px;
+}
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+   .cta a{
+    color: #fff;
+   }   
+   .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: crimson;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+   }
+   
+   .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #fff;
+   }
+   
+   .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #eaeef1;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover:before {
+    width: 100%;
+    background: crimson;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active {
+    transform: scale(0.95);
+   }
+   
+.texto-bold{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.texto-info{
+    font-size: 20px;
+    color: #222222be;
+}
+.text-center{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 15px;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+.tex-color{
+    color: crimson; 
 }
 
 @media (max-width: 690px) {
